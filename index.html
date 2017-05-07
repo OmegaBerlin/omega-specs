@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Specs for Omega</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Omega</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="hidden-xs-down nav-item active">
+                        <a class="nav-link" href="inventory.html">Inventory
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="hidden-xs-down nav-item">
+                        <a class="nav-link" href="orders.html">Orders</a>
+                    </li>
+                    <li class="hidden-xs-down nav-item">
+                        <a class="nav-link disabled" href="index.html">Reports</a>
+                    </li>
+                    <li class="hidden-xs-down nav-item">
+                        <a class="nav-link" href="admin.html">Administration</a>
+                    </li>
+                    <!-- Mobile naviguation -->
+                    <li class="hidden-sm-up nav-item">
+                        <a class="nav-link" href="qcItems.html">Quality check new items</a>
+                    </li>
+                    <li class="hidden-sm-up nav-item">
+                        <a class="nav-link" href="#">Pick items to fulfill orders</a>
+                    </li>
+                    <li class="hidden-sm-up nav-item">
+                        <a class="nav-link" href="#">Pack item</a>
+                    </li>
+                    <li class="hidden-sm-up nav-item">
+                        <a class="nav-link" href="#">Change item status</a>
+                    </li>
+                    <li class="hidden-sm-up nav-item">
+                        <a class="nav-link" href="#">Move item to new location</a>
+                    </li>
+                </ul>
+                <form class="hidden-xs-down form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row hidden-xs-down">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <span class="badge badge-pill badge-primary">45</span> items to quality check</h4>
+                            <p class="card-text">When those items are quality checked they are officiality available to be picked to fulfill your orders.</p>
+                            <p class="card-text">
+                                <span class="badge badge-pill badge-warning">5</span> orders are waiting for items to be quality checked.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <span class="badge badge-pill badge-danger">3</span> orders miss items</h4>
+                            <p class="card-text">You currently don't have in your warehouse items to fulfill those orders. Contact your supplier to order those missing items.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">
+                                <span class="badge badge-pill badge-danger">10</span> orders need to be dispatched today</h4>
+                            <p class="card-text">Those orders are approching their delivery date communicated to the customer, make them your priority today.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group hidden-sm-up">
+                <a href="qcItems.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Quality check new items</h5>
+                    </div>
+                    <small><span class="badge badge-info">45 items waiting</span></small>
+                </a>
+                <a href="changeLocation" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Pick items to fulfill orders</h5>
+                    </div>
+                    <small><span class="badge badge-warning">45 items waiting</span></small>
+                </a>
+                <a href="packItem.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Pack item</h5>
+                    </div>
+                    <small><span class="badge badge-warning">45 items waiting</span></small>
+                </a>
+                <a href="changeItemStatus.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Change item status</h5>
+                    </div>
+                </a>
+                <a href="changeLocation.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Move item to new location</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
