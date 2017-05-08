@@ -1,2 +1,3 @@
 # omega-specs
-Spec for the Omega project
+
+Just open `index.html` file in your browser and you will be able to naviguate the mockup website.
