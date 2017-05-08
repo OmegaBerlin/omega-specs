@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
@@ -51,78 +51,230 @@
                 </ul>
                 <form class="hidden-xs-down form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
         <div class="container">
-            <div class="row hidden-xs-down">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Filters</a>
-                                </h5>
+            <div class="omegaTable">
+                <!-- Filters and actions part -->
+                <div class="row hidden-xs-down">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Filters</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="card-block">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="sku">SKU</label>
+                                                <input type="text" class="form-control" id="sku" aria-describedby="skuHelp">
+                                                <small id="skuHelp" class="form-text text-muted">The product identifier</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        <button type="button" class="btn btn-primary pull-right">Apply</button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Add filter
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">UID</a>
+                                                <a class="dropdown-item" href="#">SKU name</a>
+                                                <a class="dropdown-item" href="#">Status</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="card-block">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div id="accordion2" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Actions</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="card-block">
+                                        <button type="button" class="btn btn-success">Add</button>
+                                        <button type="button" class="btn btn-primary">Edit</button>
+                                        <button type="button" class="btn btn-danger">Remove</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div id="accordion2" role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Actions</a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="card-block">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
+                <!-- Show items and pagination -->
+                <div class="row hidden-xs-down">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <span>Show</span>
+                        <div class="dropdown" style="display: inline;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownShowItemTop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">10</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownShowItemTop">
+                                <a class="dropdown-item" href="#">50</a>
+                                <a class="dropdown-item" href="#">100</a>
+                                <a class="dropdown-item" href="#">500</a>
                             </div>
                         </div>
+                        <span>of 23 356.</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Table in itself -->
+                <table class="hidden-xs-down table table-hover table-bordered">
+                    <thead class="thead-default">
+                        <tr>
+                            <th style="width: 30px;">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                </label>
+                            </th>
+                            <th>Picture</th>
+                            <th>SKU
+                                <button type="button" class="btn btn-primary btn-sm pull-right">
+                                    <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                                </button>
+                            </th>
+                            <th>Quantity
+                                <button type="button" class="btn btn-default btn-sm pull-right">
+                                    <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+                                </button>
+                            </th>
+                            <th>Location
+                                <button type="button" class="btn btn-default btn-sm pull-right">
+                                    <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                                </button>
+                            </th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                </label>
+                            </td>
+                            <td class="align-middle">
+                                <div class="text-center">
+                                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSkfoC4RS9QwuBFgyt463EPA3mw_sOSnDhxMAus72fvqBPyrUY&usqp=CAE" class="rounded" alt="Nike Air Max">
+                                </div>
+                            </td>
+                            <td class="align-middle">Air max</td>
+                            <td class="align-middle">Otto</td>
+                            <td class="align-middle">@mdo</td>
+                            <td class="align-middle">
+                                <button type="button" class="btn btn-default">Do something</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                </label>
+                            </td>
+                            <td class="align-middle">
+                                <div class="text-center">
+                                    <img src="https://i.otto.de/i/otto/17212394?h=520&w=551&sm=clamp" class="rounded" alt="Nike Air Max">
+                                </div>
+                            </td>
+                            <td class="align-middle">Air max</td>
+                            <td class="align-middle">Thornton</td>
+                            <td class="align-middle">@fat</td>
+                            <td class="align-middle">
+                                <button type="button" class="btn btn-default">Do something</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                </label>
+                            </td>
+                            <td class="align-middle">
+                                <div class="text-center">
+                                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRNbV-WliH3u3X9AmDpdG5bGj9NeWgxFNDGjGAw-EwoudkGsEA&usqp=CAE" class="rounded" alt="Nike Air Max">
+                                </div>
+                            </td>
+                            <td class="align-middle">Air max shark</td>
+                            <td class="align-middle">Bird</td>
+                            <td class="align-middle">@twitter</td>
+                            <td class="align-middle">
+                                <button type="button" class="btn btn-default">Do something</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Show items and pagination -->
+                <div class="row hidden-xs-down">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <span>Show</span>
+                        <div class="dropdown dropup" style="display: inline;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownShowItemTop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">10</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownShowItemTop">
+                                <a class="dropdown-item" href="#">50</a>
+                                <a class="dropdown-item" href="#">100</a>
+                                <a class="dropdown-item" href="#">500</a>
+                            </div>
+                        </div>
+                        <span>of 23 356.</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <table class="hidden-xs-down table table-hover table-sm">
-                <thead class="thead-default">
-                    <tr>
-                        <th>#</th>
-                        <th>First Name
-                            <button type="button" class="btn btn-default">
-                                <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span>
-                            </button>
-                        </th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
