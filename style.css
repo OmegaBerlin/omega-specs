@@ -1,16 +1,22 @@
-body {
-    padding-top: 90px;
+h4 > .badge {
+    font-size: 1.3rem
 }
 
-.card {
-    margin-bottom: 20px;
+p > .badge {
+    font-size: .75rem
 }
 
-table img {
-    max-width: 250px;
-    max-height: 250px;
+#dashboard-desktop,
+#mobile-menu,
+#scan {
+    margin-top: 20px;
 }
 
-.thead-default th {
-    background-color: #f7f7f9;
+a.disabled {
+    pointer-events: none;
+    color: #767676;
+}
+
+.title-bar-title > a {
+    color: white;
 }

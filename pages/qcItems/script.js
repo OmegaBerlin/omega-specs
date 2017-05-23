@@ -55,11 +55,11 @@ function displayQCValidation() {
     let footer = document.querySelector('#actions');
     if (!footer.innerHTML) {
         let button = document.createElement('button');
-        button.className = 'btn btn-success';
+        button.className = 'button success';
         button.setAttribute('type', 'button');
         button.textContent = 'Pass';
         let button2 = document.createElement('button');
-        button2.className = 'btn btn-danger pull-right';
+        button2.className = 'button alert pull-right';
         button2.setAttribute('type', 'button');
         button2.textContent = 'Fail';
 

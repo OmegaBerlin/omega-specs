@@ -5,91 +5,104 @@
         <title>Specs for Omega</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../style.css">
         <style type="text/css">
-        video {
-            width: calc(100% - 2px);
-            height: 240px;
-        }
-        
-        #redline {
-            position: relative;
-            top: -120px;
-            width: calc(100% - 2px);
-            height: 10px;
-            background-color: rgba(255, 0, 0, 0.3);
-            zindex: 1001;
-        }
+            video {
+                width: calc(100% - 2px);
+                height: 240px;
+            }
+            
+            #redline {
+                position: relative;
+                top: -120px;
+                width: calc(100% - 2px);
+                height: 10px;
+                background-color: rgba(255, 0, 0, 0.3);
+                zindex: 1001;
+            }
         </style>
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="../../index.html">Omega</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="../inventory/index.html">Inventory</a>
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            <div class="title-bar-title">
+                <a href="../../index.html">Omega</a>
+            </div>
+        </div>
+        <div class="top-bar" id="example-menu">
+            <div class="top-bar-left hide-for-small-only">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">Omega</li>
+                    <li>
+                        <a href="inventory.html">Inventory</a>
                     </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="orders.html">Orders</a>
+                    <li>
+                        <a href="orders.html">Orders</a>
                     </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link disabled" href="index.html">Reports</a>
+                    <li>
+                        <a class="disabled" href="index.html">Reports</a>
                     </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="admin.html">Administration</a>
-                    </li>
-                    <!-- Mobile naviguation -->
-                    <li class="hidden-sm-up nav-item active">
-                        <a class="nav-link" href="index.html">Quality check new items
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Pick items to fulfill orders</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Pack item</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Change item status</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Move item to new location</a>
+                    <li>
+                        <a href="admin.html">Administration</a>
                     </li>
                 </ul>
-                <form class="hidden-xs-down form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
-        </nav>
-        <div class="container">
-            <div class="card hidden-sm-up">
-                <h4 class="card-header">Quality check new items</h4>
-                <div class="card-block">
-                    <p class="card-text">Scan an item barcode and define if it pass your quality check or not.</p>
-                    <div id="barcodeScan">
-                        <video autoplay></video>
-                        <div id="redline"></div>
+            <div class="top-bar-right hide-for-small-only">
+                <ul class="menu">
+                    <li>
+                        <input type="search" placeholder="Search">
+                    </li>
+                    <li>
+                        <button type="button" class="button">Search</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile navigation -->
+            <div class="hide-for-medium hide-for-large">
+                <ul class="vertical menu" data-dropdown-menu>
+                    <li>
+                        <a href="pages/qcItems/index.html">Quality check new items</a>
+                    </li>
+                    <li>
+                        <a href="#">Pick items to fulfill orders</a>
+                    </li>
+                    <li>
+                        <a class="disabled" href="#">Pack item</a>
+                    </li>
+                    <li>
+                        <a href="#">Change item status</a>
+                    </li>
+                    <li>
+                        <a href="#">Move item to new location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="scan">
+            <div class="column">
+                <div class="card">
+                    <div class="card-section">
+                        <h4>Quality check new items</h4>
+                        <p>Scan an item barcode and define if it pass your quality check or not.</p>
+                        <div id="barcodeScan">
+                            <video autoplay></video>
+                            <div id="redline"></div>
+                        </div>
+                        <p class="card-text">
+                            <span class="label secondary" id="decoded"></span>
+                        </p>
+                        <canvas style="display:none;"></canvas>
                     </div>
-                    <p class="card-text">
-                        <span class="badge badge-default" id="decoded"></span>
-                    </p>
-                    <canvas style="display:none;"></canvas>
+                    <div id="actions"></div>
                 </div>
-                <div class="card-footer" id="actions"></div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+        <script type="text/javascript" src="../../script.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 

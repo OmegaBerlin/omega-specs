@@ -5,129 +5,132 @@
         <title>Specs for Omega</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/list-group.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Omega</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="inventory.html">Inventory</a>
-                    </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="orders.html">Orders</a>
-                    </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link disabled" href="index.html">Reports</a>
-                    </li>
-                    <li class="hidden-xs-down nav-item">
-                        <a class="nav-link" href="admin.html">Administration</a>
-                    </li>
-                    <!-- Mobile naviguation -->
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="pages/qcItems/index.html">Quality check new items</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Pick items to fulfill orders</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Pack item</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Change item status</a>
-                    </li>
-                    <li class="hidden-sm-up nav-item">
-                        <a class="nav-link" href="#">Move item to new location</a>
-                    </li>
-                </ul>
-                <form class="hidden-xs-down form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row hidden-xs-down">
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <span class="badge badge-pill badge-primary">45</span> items to quality check</h4>
-                            <p class="card-text">When those items are quality checked they are officiality available to be picked to fulfill your orders.</p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-warning">5</span> orders are waiting for items to be quality checked.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <span class="badge badge-pill badge-danger">3</span> orders miss items</h4>
-                            <p class="card-text">You currently don't have in your warehouse items to fulfill those orders. Contact your supplier to order those missing items.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card">
-                        <div class="card-block">
-                            <h4 class="card-title">
-                                <span class="badge badge-pill badge-danger">10</span> orders need to be dispatched today</h4>
-                            <p class="card-text">Those orders are approching their delivery date communicated to the customer, make them your priority today.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-group hidden-sm-up">
-                <a href="pages/qcItems/index.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Quality check new items</h5>
-                    </div>
-                    <small><span class="badge badge-info">45 items waiting</span></small>
-                </a>
-                <a href="changeLocation" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Pick items to fulfill orders</h5>
-                    </div>
-                    <small><span class="badge badge-warning">45 items waiting</span></small>
-                </a>
-                <a href="packItem.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Pack item</h5>
-                    </div>
-                    <small><span class="badge badge-warning">45 items waiting</span></small>
-                </a>
-                <a href="changeItemStatus.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Change item status</h5>
-                    </div>
-                </a>
-                <a href="changeLocation.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Move item to new location</h5>
-                    </div>
-                </a>
+        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+            <div class="title-bar-title">
+                <a href="index.html">Omega</a>
             </div>
         </div>
+        <div class="top-bar" id="example-menu">
+            <div class="top-bar-left hide-for-small-only">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">Omega</li>
+                    <li>
+                        <a href="inventory.html">Inventory</a>
+                    </li>
+                    <li>
+                        <a href="orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a class="disabled" href="index.html">Reports</a>
+                    </li>
+                    <li>
+                        <a href="admin.html">Administration</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right hide-for-small-only">
+                <ul class="menu">
+                    <li>
+                        <input type="search" placeholder="Search">
+                    </li>
+                    <li>
+                        <button type="button" class="button">Search</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile navigation -->
+            <div class="hide-for-medium hide-for-large">
+                <ul class="vertical menu" data-dropdown-menu>
+                    <li>
+                        <a href="pages/qcItems/index.html">Quality check new items</a>
+                    </li>
+                    <li>
+                        <a href="#">Pick items to fulfill orders</a>
+                    </li>
+                    <li>
+                        <a class="disabled" href="#">Pack item</a>
+                    </li>
+                    <li>
+                        <a href="#">Change item status</a>
+                    </li>
+                    <li>
+                        <a href="#">Move item to new location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="dashboard-desktop" class="hide-for-small-only">
+            <div class="row">
+                <div class="column small-12 medium-6 large-4">
+                    <div class="card">
+                        <div class="card-section">
+                            <h4 aria-describedby="qcItemsCount">
+                                <span class="badge primary" id="qcItemsCount">45</span> items to quality check</h4>
+                            <p>When those items are quality checked they are officiality available to be picked to fulfill your orders.</p>
+                            <p>
+                                <span class="badge warning">5</span> orders are waiting for items to be quality checked.</p>
+                            <small class="label secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="column small-12 medium-6 large-4">
+                    <div class="card">
+                        <div class="card-section">
+                            <h4 aria-describedby="ordersMissingItems">
+                                <span class="badge danger" id="ordersMissingItems">3</span> orders miss items</h4>
+                            <p>You currently don't have in your warehouse items to fulfill those orders. Contact your supplier to order those missing items.</p>
+                            <small class="label secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="column small-12 medium-6 large-4">
+                    <div class="card">
+                        <div class="card-section">
+                            <h4>
+                                <span class="badge alert">10</span> orders need to be dispatched today</h4>
+                            <p>Those orders are approching their delivery date communicated to the customer, make them your priority today.</p>
+                            <small class="label secondary">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mobile-menu" class="hide-for-medium hide-for-large">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="pages/qcItems/index.html">Quality check new items</a>
+                    <br>
+                    <span class="label primary">45 items waiting</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="changeLocation">Pick items to fulfill orders</a>
+                    <br>
+                    <span class="label warning">45 items waiting</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="packItem.html">Pack item</a>
+                    <br>
+                    <span class="label warning">45 items waiting</span>
+                </li>
+                </li>
+                <li class="list-group-item disabled">
+                    <a href="packItem.html">Change item status</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="packItem.html">Move item to new location</a>
+                </li>
+            </ul>
+        </section>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 
